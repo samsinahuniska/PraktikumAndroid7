@@ -11,7 +11,7 @@ class ListJenisbarangAdapter(private val listJenisbarang: ArrayList<JenisbarangD
     class ListViewHolder(private val binding: ItemRowJenisbarangBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(jenisbarangData: JenisbarangData) {
             with(binding){
-                tvNamajenisbarang.text = jenisbarangData.namajenisbarang
+                tvNamajenisbarang.text = jenisbarangData.id+" : "+jenisbarangData.namajenisbarang
             }
         }
     }
